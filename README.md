@@ -1,6 +1,6 @@
-# eslint-config-trendmicro
+# eslint-config-trendmicro [![npm version](https://badge.fury.io/js/eslint-config-trendmicro.svg)](http://badge.fury.io/js/eslint-config-trendmicro) [![build status](https://travis-ci.org/trendmicro-frontend/eslint-config-trendmicro.svg?branch=master)](https://travis-ci.org/trendmicro-frontend/eslint-config-trendmicro)
 
-[![npm version](https://badge.fury.io/js/eslint-config-trendmicro.svg)](http://badge.fury.io/js/eslint-config-trendmicro)
+[![NPM](https://nodei.co/npm/eslint-config-trendmicro.png?downloads=true&stars=true)](https://www.npmjs.com/package/eslint-config-trendmicro)
 
 This package provides .eslintrc as an extensible shared config.
 
