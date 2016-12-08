@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-trendmicro",
+  "version": "0.5.0",
+  "description": "Trend Micro's ESLint config.",
+  "authors": [
+    "Cheton Wu (https://github.com/cheton)"
+  ],
+  "homepage": "",
+  "snapshots": [],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "trendmicro",
+    "javascript",
+    "styleguide"
+  ],
+  "dependencies": {
+    "eslint-config-airbnb": "~13.0.0"
+  },
+  "license": "MIT"
+}
