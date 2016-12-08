@@ -10,18 +10,55 @@ We export three ESLint configurations for your usage.
 
 ### eslint-config-trendmicro
 
-1. Ensure packages are installed with correct version numbers by running:
+1. Install the latest version of [eslint-config-trendmicro](https://github.com/trendmicro-frontend/eslint-config-trendmicro):
   ```sh
-  (
-    export PKG=eslint-config-trendmicro;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-  )
+  npm install --save-dev eslint-config-trendmicro@latest
   ```
 
-  Which produces and runs a command like:
-
+2. Ensure peerDependencies are installed with correct version numbers by running:
   ```sh
-  npm install --save-dev eslint-config-trendmicro eslint@~3.11.1 eslint-plugin-jsx-a11y@~2.2.3 eslint-plugin-import@~2.1.0 eslint-plugin-react@~6.8.0
+  npm info "eslint-config-trendmicro@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs -L1 npm install --save-dev
   ```
 
-2. Add `"extends": "trendmicro"` to your .eslintrc
+  Which produces and runs commands like this:
+
+  ```sh
+  npm install --save-dev eslint@~3.11.1
+  npm install --save-dev eslint-plugin-import@~2.1.0
+  npm install --save-dev eslint-plugin-jsx-a11y@~2.2.3
+  npm install --save-dev eslint-plugin-react@~6.8.0
+  ```
+
+3. Add `"extends": "trendmicro"` to .eslintrc:
+  ```json
+  {
+    "extends": "trendmicro",
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
+  ```
+  
+## Notes
+  
+At the moment, you will need to use [babel-eslint](https://github.com/babel/babel-eslint) if you use stuff like class properties, decorators, types.
+  
+### babel-eslint
+
+1. Install the latest version of [babel-eslint](https://github.com/babel/babel-eslint):
+  ```sh
+  npm install --save-dev babel-eslint@latest
+  ```
+  
+2. Update .eslintrc with Babel parser support:
+  ```json
+  {
+    "extends": "trendmicro",
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
+  ```
