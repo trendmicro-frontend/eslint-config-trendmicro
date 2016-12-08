@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/trendmicro-frontend/eslint-config-trendmicro",
   "dependencies": {
-    "eslint-config-airbnb": "^13.0.0"
+    "eslint-config-airbnb": "~13.0.0"
   },
   "devDependencies": {
     "babel-preset-airbnb": "~2.1.1",
@@ -47,7 +47,6 @@
     "eslint-plugin-jsx-a11y": "~2.2.3",
     "eslint-plugin-react": "~6.8.0",
     "in-publish": "~2.0.0",
-    "react": "^0.14.0 || ^15.0.0",
     "safe-publish-latest": "~1.1.1",
     "tape": "~4.6.2"
   },
