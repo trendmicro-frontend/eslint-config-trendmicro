@@ -1,0 +1,64 @@
+{
+  "name": "eslint-config-trendmicro",
+  "version": "0.5.0",
+  "description": "Trend Micro's ESLint config.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "tests-only": "babel-tape-runner ./test/test-*.js",
+    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent tests-only"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trendmicro-frontend/eslint-config-trendmicro"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "trendmicro",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Cheton Wu (https://github.com/cheton)",
+  "contributors": [
+    {
+      "name": "Cheton Wu",
+      "email": "cheton@gmail.com",
+      "url": "https://github.com/cheton"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trendmicro-frontend/eslint-config-trendmicro/issues"
+  },
+  "homepage": "https://github.com/trendmicro-frontend/eslint-config-trendmicro",
+  "dependencies": {
+    "eslint-config-airbnb": "^13.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-airbnb": "~2.1.1",
+    "babel-tape-runner": "~2.0.1",
+    "eslint": "~3.11.1",
+    "eslint-find-rules": "~1.14.3",
+    "eslint-plugin-import": "~2.2.0",
+    "eslint-plugin-jsx-a11y": "~2.2.3",
+    "eslint-plugin-react": "~6.8.0",
+    "in-publish": "~2.0.0",
+    "react": "^0.14.0 || ^15.0.0",
+    "safe-publish-latest": "~1.1.1",
+    "tape": "~4.6.2"
+  },
+  "peerDependencies": {
+    "eslint": "~3.11.1",
+    "eslint-plugin-import": "~2.2.0",
+    "eslint-plugin-jsx-a11y": "~2.2.3",
+    "eslint-plugin-react": "~6.8.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}
+
