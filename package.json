@@ -22,11 +22,11 @@
     "javascript",
     "styleguide"
   ],
-  "author": "Cheton Wu (https://github.com/cheton)",
+  "author": "Cheton Wu <cheton_wu@trend.com.tw>",
   "contributors": [
     {
       "name": "Cheton Wu",
-      "email": "cheton@gmail.com",
+      "email": "cheton_wu@trend.com.tw",
       "url": "https://github.com/cheton"
     }
   ],
