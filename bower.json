@@ -3,9 +3,9 @@
   "version": "0.5.0",
   "description": "Trend Micro's ESLint config.",
   "authors": [
-    "Cheton Wu (https://github.com/cheton)"
+    "Cheton Wu <cheton_wu@trend.com.tw>"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/trendmicro-frontend/eslint-config-trendmicro",
   "snapshots": [],
   "keywords": [
     "eslint",
