@@ -4,10 +4,11 @@
   "description": "Trend Micro's ESLint config.",
   "main": "index.js",
   "scripts": {
+    "bowersync": "./scripts/bowersync",
     "lint": "eslint .",
-    "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
+    "prepublish": "npm run bowersync && (in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
+    "tests-only": "babel-tape-runner ./test/test-*.js",
     "test": "npm run --silent tests-only"
   },
   "repository": {
