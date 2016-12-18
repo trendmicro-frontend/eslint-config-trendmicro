@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-trendmicro",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Trend Micro's ESLint config.",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/trendmicro-frontend/eslint-config-trendmicro",
   "dependencies": {
-    "eslint-config-airbnb": "~13.0.0"
+    "eslint-config-airbnb": "^13.0.0"
   },
   "devDependencies": {
     "babel-preset-airbnb": "~2.1.1",
@@ -51,10 +51,10 @@
     "tape": "~4.6.3"
   },
   "peerDependencies": {
-    "eslint": "~3.11.1",
-    "eslint-plugin-import": "~2.2.0",
-    "eslint-plugin-jsx-a11y": "~2.2.3",
-    "eslint-plugin-react": "~6.8.0"
+    "eslint": "^3.11.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0"
   },
   "engines": {
     "node": ">= 4"
