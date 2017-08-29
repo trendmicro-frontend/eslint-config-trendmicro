@@ -7,9 +7,6 @@ module.exports = {
             jsx: true
         }
     },
-    ecmaFeatures: {
-        jsx: true
-    },
     rules: {
         'react/forbid-prop-types': 0,
         'react/jsx-boolean-value': 0,

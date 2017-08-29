@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-trendmicro",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "Trend Micro's ESLint config.",
   "authors": [
     {
@@ -20,7 +20,7 @@
     "styleguide"
   ],
   "dependencies": {
-    "eslint-config-airbnb": "^15.0.1"
+    "eslint-config-airbnb": "^15.1.0"
   },
   "license": "MIT"
 }
