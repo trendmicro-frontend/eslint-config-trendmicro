@@ -8,6 +8,7 @@ module.exports = {
         }
     },
     rules: {
+        'react/boolean-prop-naming': 0,
         'react/forbid-prop-types': 0,
         'react/jsx-boolean-value': 0,
         'react/jsx-curly-spacing': 1,
@@ -34,8 +35,10 @@ module.exports = {
         'react/no-find-dom-node': 0,
         'react/no-multi-comp': [1, { 'ignoreStateless': true }],
         'react/no-string-refs': 1,
+        'react/no-typos': 1,
         'react/no-unknown-property': 1,
         'react/no-unused-prop-types': 0,
+        'react/no-unused-state': 0,
         'react/prefer-stateless-function': 1,
         'react/prop-types': [1, {
             'ignore': ['children', 'className', 'style']
