@@ -43,6 +43,7 @@ module.exports = {
         'no-array-constructor': 2,
         'no-caller': 2,
         'no-cond-assign': [2, 'except-parens'],
+        'no-confusing-arrow': [2, { 'allowParens': true }],
         'no-const-assign': 2,
         'no-console': [1, { 'allow': ['assert', 'warn', 'error'] }],
         'no-continue': 0,
