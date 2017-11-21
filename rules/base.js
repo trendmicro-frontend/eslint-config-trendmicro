@@ -30,7 +30,13 @@ module.exports = {
             'beforeColon': false,
             'afterColon': true
         }],
-        'max-len': [1, 160, 2, { 'ignoreComments': true }],
+        'max-len': [1, 160, 4, {
+            'ignoreComments': true,
+            'ignoreUrls': true,
+            'ignoreStrings': true,
+            'ignoreTemplateLiterals': true,
+            'ignoreRegExpLiterals': true
+        }],
         'new-cap': [2, { 'newIsCap': true, 'capIsNew': false }],
         'new-parens': 2,
         'no-alert': 2,
@@ -39,7 +45,7 @@ module.exports = {
         'no-cond-assign': [2, 'except-parens'],
         'no-const-assign': 2,
         'no-console': [1, { 'allow': ['assert', 'warn', 'error'] }],
-        'no-continue': 2,
+        'no-continue': 0,
         'no-else-return': 0,
         'no-extra-boolean-cast': 0,
         'no-lone-blocks': 0,
