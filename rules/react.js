@@ -18,13 +18,11 @@ module.exports = {
         'react/jsx-max-props-per-line': [1, { 'maximum': 3 }],
         'react/jsx-wrap-multilines': 1,
         'react/jsx-no-bind': [1, {
-            'ignoreRefs': false,
-            'allowArrowFunctions': true,
-            'allowBind': true
+            'ignoreRefs': true
         }],
         'react/jsx-no-duplicate-props': 1,
         'react/jsx-no-target-blank': 1,
-        'react/jsx-no-undef': 1,
+        'react/jsx-no-undef': 2,
         'react/jsx-tag-spacing': 1,
         'react/jsx-uses-react': 1,
         'react/jsx-uses-vars': 1,
