@@ -23,10 +23,10 @@ We export three ESLint configurations for your usage.
   Which produces and runs commands like this:
 
   ```sh
-  npm install --save-dev eslint@^4.5.0
-  npm install --save-dev eslint-plugin-import@^2.7.0
-  npm install --save-dev eslint-plugin-jsx-a11y@^5.1.1
-  npm install --save-dev eslint-plugin-react@^7.3.0
+  npm install --save-dev eslint@^4.13.0
+  npm install --save-dev eslint-plugin-import@^2.8.0
+  npm install --save-dev eslint-plugin-jsx-a11y@^6.0.3
+  npm install --save-dev eslint-plugin-react@^7.5.0
   ```
 
 3. Add `"extends": "trendmicro"` to .eslintrc:
