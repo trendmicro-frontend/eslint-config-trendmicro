@@ -18,6 +18,7 @@ module.exports = {
         'eol-last': 2,
         'eqeqeq': 2,
         'func-names': 0,
+        'function-paren-newline': [1, 'consistent'],
         'global-require': 0,
         'implicit-arrow-linebreak': 2,
         'import/extensions': [2, { 'js': 'never', 'json': 'always' }],
@@ -74,10 +75,17 @@ module.exports = {
         'no-useless-escape': 0,
         'no-useless-return': 0,
         'no-var': 1,
+        'object-curly-newline': [1, {
+            'consistent': true
+        }],
         'object-shorthand': 0,
         'one-var': 0,
         'one-var-declaration-per-line': 0,
         'prefer-const': 0,
+        'prefer-destructuring': 0,
+        'prefer-promise-reject-errors': [1, {
+            'allowEmptyReject': true
+        }],
         'prefer-spread': 0,
         'prefer-template': 0,
         'quote-props': [0, 'as-needed'],
