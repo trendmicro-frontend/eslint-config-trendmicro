@@ -10,7 +10,7 @@ module.exports = {
         'class-methods-use-this': 0,
         'comma-spacing': 2,
         'comma-style': [2, 'last'],
-        'comma-dangle': [2, 'never'],
+        'comma-dangle': 0,
         'consistent-return': 2,
         'curly': [2, 'all'],
         'default-case': 2,
