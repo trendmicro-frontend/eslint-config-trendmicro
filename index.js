@@ -8,10 +8,7 @@ module.exports = {
     ].map(require.resolve),
     parserOptions: {
         ecmaVersion: 2017,
-        sourceType: 'module',
-        ecmaFeatures: {
-            experimentalObjectRestSpread: true
-        }
+        sourceType: 'module'
     },
     rules: {
     }
