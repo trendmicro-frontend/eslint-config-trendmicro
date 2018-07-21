@@ -33,12 +33,18 @@ module.exports = {
             'beforeColon': false,
             'afterColon': true
         }],
+        'max-classes-per-file': [2, 1],
         'max-len': [1, 160, 4, {
             'ignoreComments': true,
             'ignoreUrls': true,
             'ignoreStrings': true,
             'ignoreTemplateLiterals': true,
             'ignoreRegExpLiterals': true
+        }],
+        'max-lines-per-function': [1, {
+            'max': 200,
+            'skipBlankLines': true,
+            'skipComments': true
         }],
         'new-cap': [2, { 'newIsCap': true, 'capIsNew': false }],
         'new-parens': 2,
@@ -83,6 +89,7 @@ module.exports = {
         'one-var-declaration-per-line': 0,
         'prefer-const': 0,
         'prefer-destructuring': 0,
+        'prefer-object-spread': 0,
         'prefer-promise-reject-errors': [1, {
             'allowEmptyReject': true
         }],

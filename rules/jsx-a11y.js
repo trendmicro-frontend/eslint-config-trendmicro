@@ -60,7 +60,10 @@ module.exports = {
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/interactive-supports-focus.md
         'jsx-a11y/interactive-supports-focus': 'error',
 
-        // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
+        // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-associated-control.md
+        'jsx-a11y/label-has-associated-control': 'off',
+
+        // [deprecated] https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
         'jsx-a11y/label-has-for': ['off', { components: ['label'] }],
 
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/lang.md

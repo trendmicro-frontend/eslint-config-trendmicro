@@ -39,6 +39,7 @@ module.exports = {
         'react/no-string-refs': 1,
         'react/no-typos': 1,
         'react/no-unknown-property': 1,
+        'react/no-unsafe': 1,
         'react/no-unused-prop-types': 0,
         'react/no-unused-state': 0,
         'react/prefer-stateless-function': 1,
