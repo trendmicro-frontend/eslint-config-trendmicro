@@ -89,6 +89,12 @@ module.exports = {
         'object-shorthand': 0,
         'one-var': 0,
         'one-var-declaration-per-line': 0,
+        'operator-linebreak': [1, 'after', {
+            'overrides': {
+                '?': 'before',
+                ':': 'before'
+            }
+        }],
         'prefer-const': 0,
         'prefer-destructuring': 0,
         'prefer-object-spread': 0,
