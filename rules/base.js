@@ -22,6 +22,7 @@ module.exports = {
         'global-require': 0,
         'implicit-arrow-linebreak': 2,
         'import/extensions': [2, { 'js': 'never', 'json': 'always' }],
+        'import/named': 0,
         'import/newline-after-import': 2,
         'import/no-extraneous-dependencies': 0,
         'import/no-named-as-default': 2,
