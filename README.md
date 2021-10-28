@@ -37,7 +37,7 @@ We export three ESLint configurations for your usage.
     "env": {
       "browser": true,
       "node": true
-    },"
+    },
     "plugins": [
       "@babel"
     ],
