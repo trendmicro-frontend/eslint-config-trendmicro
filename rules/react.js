@@ -45,18 +45,20 @@ module.exports = {
     'react/no-unused-state': 0,
     'react/prefer-stateless-function': 1,
     'react/prop-types': [1, {
-      'ignore': ['children', 'className', 'style']
+      'ignore': ['children', 'className', 'style'],
     }],
     'react/react-in-jsx-scope': 1,
     'react/require-default-props': 0,
     'react/self-closing-comp': 1,
-    'react/sort-comp': 0
+    'react/sort-comp': 0,
+    'react/state-in-constructor': 0,
+    'react/static-property-placement': 1,
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.json']
-      }
-    }
-  }
+        extensions: ['.js', '.jsx', '.json'],
+      },
+    },
+  },
 };
