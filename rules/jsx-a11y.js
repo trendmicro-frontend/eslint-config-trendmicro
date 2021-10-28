@@ -45,6 +45,9 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/click-events-have-key-events.md
     'jsx-a11y/click-events-have-key-events': 'warn',
 
+    // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/control-has-associated-label.md
+    'jsx-a11y/control-has-associated-label': 'warn',
+
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/heading-has-content.md
     'jsx-a11y/heading-has-content': ['error', { components: [''] }],
 
