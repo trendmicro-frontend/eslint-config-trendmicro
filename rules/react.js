@@ -15,8 +15,8 @@ module.exports = {
         'react/jsx-boolean-value': 0,
         'react/jsx-curly-spacing': 1,
         'react/jsx-filename-extension': 0,
-        'react/jsx-indent': [2, 4],
-        'react/jsx-indent-props': [2, 4],
+        'react/jsx-indent': [2, 2],
+        'react/jsx-indent-props': [2, 2],
         'react/jsx-max-props-per-line': [1, { 'maximum': 3 }],
         'react/jsx-wrap-multilines': 1,
         'react/jsx-no-bind': [1, {

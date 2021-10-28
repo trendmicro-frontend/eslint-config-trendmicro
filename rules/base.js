@@ -29,7 +29,7 @@ module.exports = {
         'import/no-webpack-loader-syntax': 0,
         'import/prefer-default-export': 0,
         'import/exports-last': 0,
-        'indent': [2, 4],
+        'indent': [2, 2],
         'key-spacing': [2, {
             'beforeColon': false,
             'afterColon': true
