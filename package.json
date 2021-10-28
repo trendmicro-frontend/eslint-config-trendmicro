@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-trendmicro",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Trend Micro's ESLint config.",
   "main": "index.js",
   "scripts": {
