@@ -23,42 +23,25 @@ We export three ESLint configurations for your usage.
   Which produces and runs commands like this:
 
   ```sh
-  npm install --save-dev eslint@^5.2.0
-  npm install --save-dev eslint-plugin-import@^2.13.0
-  npm install --save-dev eslint-plugin-jsx-a11y@^6.1.1
-  npm install --save-dev eslint-plugin-react@^7.10.0
+  npm install --save-dev eslint@^7.0.0
+  npm install --save-dev eslint-plugin-import@latest
+  npm install --save-dev eslint-plugin-jsx-a11y@latest
+  npm install --save-dev eslint-plugin-react@latest
   ```
 
 3. Add `"extends": "trendmicro"` to .eslintrc:
   ```json
   {
     "extends": "trendmicro",
+    "parser": "@babel/eslint-parser",
     "env": {
       "browser": true,
       "node": true
-    }
-  }
-  ```
-  
-## Notes
-  
-At the moment, you will need to use [babel-eslint](https://github.com/babel/babel-eslint) if you use stuff like class properties, decorators, types.
-  
-### babel-eslint
-
-1. Install the latest version of [babel-eslint](https://github.com/babel/babel-eslint):
-  ```sh
-  npm install --save-dev babel-eslint@latest
-  ```
-  
-2. Update .eslintrc with Babel parser support:
-  ```json
-  {
-    "extends": "trendmicro",
-    "parser": "babel-eslint",
-    "env": {
-      "browser": true,
-      "node": true
+    },"
+    "plugins": [
+      "@babel"
+    ],
+    "rules": {
     }
   }
   ```
