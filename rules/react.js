@@ -27,6 +27,7 @@ module.exports = {
     'react/jsx-no-target-blank': 1,
     'react/jsx-no-undef': 2,
     'react/jsx-one-expression-per-line': 0,
+    'react/jsx-props-no-spreading': 0,
     'react/jsx-tag-spacing': 1,
     'react/jsx-uses-react': 1,
     'react/jsx-uses-vars': 1,
