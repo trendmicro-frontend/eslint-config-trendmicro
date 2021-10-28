@@ -7,8 +7,7 @@
     "lint": "eslint .",
     "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
-    "test": "tap test/*.js --node-arg=--require --node-arg=babel-register --node-arg=--require --node-arg=babel-polyfill",
-    "coveralls": "tap test/*.js --coverage --coverage-report=text-lcov --nyc-arg=--require --nyc-arg=babel-register --nyc-arg=--require --nyc-arg=babel-polyfill | coveralls"
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
@@ -36,31 +35,23 @@
   },
   "homepage": "https://github.com/trendmicro-frontend/eslint-config-trendmicro",
   "dependencies": {
-    "eslint-config-airbnb": "^17.0.0"
+    "eslint-config-airbnb": "^18.2.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-airbnb": "^2.5.2",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^5.2.0",
-    "eslint-find-rules": "^3.3.1",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.10.0",
-    "in-publish": "^2.0.0",
-    "safe-publish-latest": "^1.1.1",
-    "tap": "^12.0.1"
+    "eslint": "^7.0.0",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "eslint-plugin-react": "latest",
+    "in-publish": "^2.0.1",
+    "safe-publish-latest": "^2.0.0"
   },
   "peerDependencies": {
-    "eslint": "^5.2.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.10.0"
+    "eslint": "^7.0.0",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "eslint-plugin-react": "latest"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">=12"
   }
 }
