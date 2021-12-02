@@ -17,7 +17,9 @@ module.exports = {
     'consistent-return': 2,
     'curly': [2, 'all'],
     'default-case': 2,
-    'dot-notation': [2, { 'allowKeywords': true }],
+    'dot-notation': [1, {
+      'allowKeywords': true,
+    }],
     'eol-last': 2,
     'eqeqeq': 2,
     'func-names': 0,
