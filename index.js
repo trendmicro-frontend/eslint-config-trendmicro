@@ -7,7 +7,7 @@ module.exports = {
     './rules/react',
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
   rules: {
