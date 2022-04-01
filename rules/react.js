@@ -34,6 +34,7 @@ module.exports = {
     'react/jsx-uses-vars': 1,
     'react/no-access-state-in-setstate': 1,
     'react/no-array-index-key': 1,
+    'react/no-unused-class-component-methods': 0,
     'react/no-danger': 1,
     'react/no-did-mount-set-state': 1,
     'react/no-did-update-set-state': 1,
