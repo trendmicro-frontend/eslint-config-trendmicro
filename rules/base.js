@@ -108,6 +108,7 @@ module.exports = {
     'prefer-promise-reject-errors': [1, {
       'allowEmptyReject': true
     }],
+    'prefer-regex-literals': 0,
     'prefer-spread': 0,
     'prefer-template': 0,
     'quote-props': [0, 'as-needed'],
