@@ -62,6 +62,7 @@ module.exports = {
     'no-cond-assign': [2, 'except-parens'],
     'no-confusing-arrow': [2, { 'allowParens': true }],
     'no-const-assign': 2,
+    'no-constant-binary-expression': 1,
     'no-constructor-return': 0,
     'no-console': [1, { 'allow': ['assert', 'warn', 'error'] }],
     'no-continue': 0,
@@ -104,6 +105,7 @@ module.exports = {
     }],
     'prefer-const': 0,
     'prefer-destructuring': 0,
+    'prefer-object-has-own': 0,
     'prefer-object-spread': 0,
     'prefer-promise-reject-errors': [1, {
       'allowEmptyReject': true
