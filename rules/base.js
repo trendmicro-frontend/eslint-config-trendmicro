@@ -40,7 +40,7 @@ module.exports = {
       'beforeColon': false,
       'afterColon': true
     }],
-    'lines-between-class-members': 1,
+    'lines-between-class-members': 0,
     'max-classes-per-file': [2, 1],
     'max-len': [1, 160, 4, {
       'ignoreComments': true,
