@@ -1,13 +1,25 @@
 {
   "name": "eslint-config-trendmicro",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "Trend Micro's ESLint config.",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && rollup -c",
     "lint": "eslint .",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
+    "prepublish": "npm run build && (in-install || true) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
-    "test": "exit 0"
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -28,26 +40,28 @@
   },
   "homepage": "https://github.com/trendmicro-frontend/eslint-config-trendmicro",
   "dependencies": {
-    "eslint-config-airbnb": "^19.0.4"
+    "@eslint/js": "^9.0.0"
   },
   "devDependencies": {
-    "eslint": "latest",
-    "eslint-find-rules": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "eslint": "^9.0.0",
     "eslint-plugin-import": "latest",
     "eslint-plugin-jsx-a11y": "latest",
     "eslint-plugin-react": "latest",
     "eslint-plugin-react-hooks": "latest",
     "in-publish": "^2.0.1",
-    "safe-publish-latest": "^2.0.0"
+    "rollup": "^4.0.0",
+    "safe-publish-latest": "^2.0.0",
+    "vitest": "^4.0.18"
   },
   "peerDependencies": {
-    "eslint": "latest",
+    "eslint": "^9.0.0",
     "eslint-plugin-import": "latest",
     "eslint-plugin-jsx-a11y": "latest",
     "eslint-plugin-react": "latest",
     "eslint-plugin-react-hooks": "latest"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=20"
   }
 }

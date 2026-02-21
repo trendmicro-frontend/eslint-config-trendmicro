@@ -1,12 +1,4 @@
-module.exports = {
-  plugins: [
-    'react'
-  ],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
+export default {
   rules: {
     'react/boolean-prop-naming': 0,
     'react/button-has-type': 1,
@@ -66,6 +58,9 @@ module.exports = {
       node: {
         extensions: ['.js', '.jsx', '.json'],
       },
+    },
+    react: {
+      version: 'detect',
     },
   },
 };
