@@ -1,9 +1,5 @@
 // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
-module.exports = {
-  plugins: [
-    'jsx-a11y',
-    'react'
-  ],
+export default {
   rules: {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/accessible-emoji.md
     'jsx-a11y/accessible-emoji': 'error',

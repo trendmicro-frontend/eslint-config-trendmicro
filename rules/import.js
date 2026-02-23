@@ -1,6 +1,7 @@
-module.exports = {
+export default {
   rules: {
-    'import/extensions': [2, { 'js': 'never', 'json': 'always' }],
+    'import/exports-last': 0,
+    'import/named': 0,
     'import/newline-after-import': 2,
     'import/no-extraneous-dependencies': 0,
     'import/no-named-as-default': 2,

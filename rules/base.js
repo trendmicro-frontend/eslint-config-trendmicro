@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     'arrow-body-style': 0,
     'arrow-parens': [0, 'as-needed'],
@@ -27,14 +27,6 @@ module.exports = {
     'function-paren-newline': [1, 'consistent'],
     'global-require': 0,
     'implicit-arrow-linebreak': 2,
-    'import/extensions': [2, { 'js': 'never', 'json': 'always' }],
-    'import/named': 0,
-    'import/newline-after-import': 2,
-    'import/no-extraneous-dependencies': 0,
-    'import/no-named-as-default': 2,
-    'import/no-webpack-loader-syntax': 0,
-    'import/prefer-default-export': 0,
-    'import/exports-last': 0,
     'indent': [2, 2],
     'key-spacing': [2, {
       'beforeColon': false,
@@ -114,7 +106,7 @@ module.exports = {
     'prefer-spread': 0,
     'prefer-template': 0,
     'quote-props': [0, 'as-needed'],
-    'quotes': [2, 'single'],
+    'quotes': [2, 'single', { 'avoidEscape': true }],
     'require-await': 2,
     'space-before-function-paren': 0,
     'space-unary-ops': 2,
