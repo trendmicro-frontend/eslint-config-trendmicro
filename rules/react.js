@@ -24,7 +24,7 @@ export default {
     'react/jsx-one-expression-per-line': 0,
     'react/jsx-props-no-spreading': 0,
     'react/jsx-tag-spacing': 1,
-    'react/jsx-uses-react': 1,
+    'react/jsx-uses-react': 0,
     'react/jsx-uses-vars': 1,
     'react/jsx-wrap-multilines': 1,
     'react/no-access-state-in-setstate': 1,
@@ -46,7 +46,7 @@ export default {
     'react/prop-types': [1, {
       'ignore': ['children', 'className', 'style'],
     }],
-    'react/react-in-jsx-scope': 1,
+    'react/react-in-jsx-scope': 0,
     'react/require-default-props': 0,
     'react/self-closing-comp': 1,
     'react/sort-comp': 0,

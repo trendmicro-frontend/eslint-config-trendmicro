@@ -1,10 +1,12 @@
 import js from '@eslint/js';
+import stylisticPlugin from '@stylistic/eslint-plugin';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import importPlugin from 'eslint-plugin-import';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 
 import baseRules from './rules/base.js';
+import stylisticRules from './rules/stylistic.js';
 import importRules from './rules/import.js';
 import jsxA11yRules from './rules/jsx-a11y.js';
 import reactRules from './rules/react.js';
@@ -13,6 +15,7 @@ export default [
   js.configs.recommended,
   {
     plugins: {
+      '@stylistic': stylisticPlugin,
       react: reactPlugin,
       'react-hooks': reactHooksPlugin,
       import: importPlugin,
@@ -29,6 +32,7 @@ export default [
     },
     rules: {
       ...baseRules.rules,
+      ...stylisticRules.rules,
       ...importRules.rules,
       ...jsxA11yRules.rules,
       ...reactRules.rules,
