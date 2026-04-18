@@ -61,12 +61,12 @@ describe('config structure', () => {
 describe('base rules', () => {
   it('enforces single quotes', () => {
     const msgs = lint('const x = "hello";\n');
-    expect(errorsFor(msgs, 'quotes')).toHaveLength(1);
+    expect(errorsFor(msgs, '@stylistic/quotes')).toHaveLength(1);
   });
 
   it('allows single quotes', () => {
     const msgs = lint("const x = 'hello';\n");
-    expect(errorsFor(msgs, 'quotes')).toHaveLength(0);
+    expect(errorsFor(msgs, '@stylistic/quotes')).toHaveLength(0);
   });
 
   it('enforces === over ==', () => {

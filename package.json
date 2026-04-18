@@ -19,7 +19,10 @@
     "lint": "eslint .",
     "prepublish": "npm run build && (in-install || true) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "yarn build && changeset publish"
   },
   "repository": {
     "type": "git",
@@ -40,9 +43,11 @@
   },
   "homepage": "https://github.com/trendmicro-frontend/eslint-config-trendmicro",
   "dependencies": {
-    "@eslint/js": "^9.0.0"
+    "@eslint/js": "^9.0.0 || ^10.0.0",
+    "@stylistic/eslint-plugin": "^5.9.0"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@rollup/plugin-node-resolve": "^15.0.0",
     "eslint": "^9.0.0",
     "eslint-plugin-import": "latest",
@@ -55,7 +60,8 @@
     "vitest": "^4.0.18"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0",
+    "@stylistic/eslint-plugin": "^5.9.0",
+    "eslint": "^9.0.0 || ^10.0.0",
     "eslint-plugin-import": "latest",
     "eslint-plugin-jsx-a11y": "latest",
     "eslint-plugin-react": "latest",

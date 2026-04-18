@@ -1,9 +1,6 @@
 // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
 export default {
   rules: {
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/accessible-emoji.md
-    'jsx-a11y/accessible-emoji': 'error',
-
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md
     'jsx-a11y/alt-text': ['error', {
       elements: ['img', 'object', 'area', 'input[type="image"]'],
@@ -62,9 +59,6 @@ export default {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-associated-control.md
     'jsx-a11y/label-has-associated-control': 'off',
 
-    // [deprecated] https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
-    'jsx-a11y/label-has-for': ['off', { components: ['label'] }],
-
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/lang.md
     'jsx-a11y/lang': 'error',
 
@@ -120,9 +114,6 @@ export default {
       tags: [],
       roles: ['tabpanel']
     }],
-
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md
-    'jsx-a11y/no-onchange': 'off',
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-redundant-roles.md
     'jsx-a11y/no-redundant-roles': 'error',
