@@ -1,5 +1,11 @@
 # eslint-config-trendmicro
 
+## 4.1.3
+
+### Patch Changes
+
+- c90867c: chore(rules): drop `assert` from `no-console` allow list
+
 ## 4.1.2
 
 ### Patch Changes
