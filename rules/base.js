@@ -59,7 +59,7 @@ export default {
     'no-useless-computed-key': 0,
     'no-useless-concat': 0,
     'no-useless-constructor': 0,
-    'no-useless-escape': 0,
+    'no-useless-escape': 1,
     'no-useless-rename': 0,
     'no-useless-return': 0,
     'no-var': 1,
