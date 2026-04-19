@@ -55,7 +55,7 @@ export default {
     '@stylistic/jsx-one-expression-per-line': 0,
     '@stylistic/jsx-pascal-case': 0,
     '@stylistic/jsx-props-no-multi-spaces': 0,
-    '@stylistic/jsx-quotes': 2,
+    '@stylistic/jsx-quotes': 1,
     '@stylistic/jsx-self-closing-comp': 0,
     '@stylistic/jsx-sort-props': 0,
     '@stylistic/jsx-tag-spacing': [2, {
@@ -64,7 +64,7 @@ export default {
       'beforeSelfClosing': 'always',
       'closingSlash': 'never',
     }],
-    '@stylistic/jsx-wrap-multilines': [2, {
+    '@stylistic/jsx-wrap-multilines': [1, {
       'arrow': 'parens-new-line',
       'assignment': 'parens-new-line',
       'condition': 'parens-new-line',
@@ -121,7 +121,7 @@ export default {
     '@stylistic/padded-blocks': [2, { 'blocks': 'never', 'classes': 'never', 'switches': 'never' }],
     '@stylistic/padding-line-between-statements': 0,
     '@stylistic/quote-props': 0,
-    '@stylistic/quotes': [2, 'single', { 'allowTemplateLiterals': 'always', 'avoidEscape': false }],
+    '@stylistic/quotes': [1, 'single', { 'allowTemplateLiterals': 'avoidEscape', 'avoidEscape': true }],
     '@stylistic/rest-spread-spacing': [2, 'never'],
     '@stylistic/semi': 0,
     '@stylistic/semi-spacing': [2, { 'after': true, 'before': false }],
