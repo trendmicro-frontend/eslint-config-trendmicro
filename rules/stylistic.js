@@ -15,13 +15,7 @@ export default {
       'afterColon': true
     }],
     '@stylistic/lines-between-class-members': 0,
-    '@stylistic/max-len': [1, 160, 4, {
-      'ignoreComments': true,
-      'ignoreUrls': true,
-      'ignoreStrings': true,
-      'ignoreTemplateLiterals': true,
-      'ignoreRegExpLiterals': true
-    }],
+    '@stylistic/max-len': 0,
     '@stylistic/new-parens': 2,
     '@stylistic/no-confusing-arrow': [2, { 'allowParens': true }],
     '@stylistic/no-mixed-operators': 0,

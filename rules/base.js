@@ -17,11 +17,7 @@ export default {
     'eqeqeq': 2,
     'func-names': 0,
     'max-classes-per-file': [2, 1],
-    'max-lines-per-function': [1, {
-      'max': 200,
-      'skipBlankLines': true,
-      'skipComments': true
-    }],
+    'max-lines-per-function': 0,
     'new-cap': [2, { 'newIsCap': true, 'capIsNew': false }],
     'no-alert': 2,
     'no-array-constructor': 2,
