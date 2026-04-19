@@ -1,5 +1,11 @@
 # eslint-config-trendmicro
 
+## 4.1.4
+
+### Patch Changes
+
+- 4da05ef: chore(rules): disable `max-len` and `max-lines-per-function`
+
 ## 4.1.3
 
 ### Patch Changes
