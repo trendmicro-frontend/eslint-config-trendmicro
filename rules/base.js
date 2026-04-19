@@ -30,7 +30,7 @@ export default {
     'no-const-assign': 2,
     'no-constant-binary-expression': 1,
     'no-constructor-return': 0,
-    'no-console': [1, { 'allow': ['assert', 'warn', 'error'] }],
+    'no-console': [1, { 'allow': ['warn', 'error'] }],
     'no-continue': 0,
     'no-else-return': 0,
     'no-extra-boolean-cast': 0,
