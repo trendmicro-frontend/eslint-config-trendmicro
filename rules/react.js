@@ -43,9 +43,7 @@ export default {
     'react/no-unused-prop-types': 0,
     'react/no-unused-state': 0,
     'react/prefer-stateless-function': 1,
-    'react/prop-types': [1, {
-      'ignore': ['children', 'className', 'style'],
-    }],
+    'react/prop-types': 0,
     'react/react-in-jsx-scope': 0,
     'react/require-default-props': 0,
     'react/self-closing-comp': 1,
