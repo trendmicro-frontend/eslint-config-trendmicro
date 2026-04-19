@@ -1,5 +1,11 @@
 # eslint-config-trendmicro
 
+## 4.1.5
+
+### Patch Changes
+
+- eee7af0: chore(rules): disable `react/prop-types` rule
+
 ## 4.1.4
 
 ### Patch Changes
