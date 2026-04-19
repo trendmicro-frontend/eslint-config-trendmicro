@@ -1,5 +1,11 @@
 # eslint-config-trendmicro
 
+## 4.2.0
+
+### Minor Changes
+
+- e436332: chore(rules): align `@stylistic` rules with plugin's recommended config
+
 ## 4.1.5
 
 ### Patch Changes
