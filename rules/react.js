@@ -13,7 +13,7 @@ export default {
     'react/jsx-fragments': 1,
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
-    'react/jsx-max-props-per-line': [1, { 'maximum': 3 }],
+    'react/jsx-max-props-per-line': [1, { maximum: 1, when: 'multiline' }],
     'react/jsx-no-bind': [1, {
       'ignoreRefs': true
     }],
