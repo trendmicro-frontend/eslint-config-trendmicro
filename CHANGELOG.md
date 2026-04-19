@@ -1,5 +1,11 @@
 # eslint-config-trendmicro
 
+## 4.1.2
+
+### Patch Changes
+
+- 3364f8c: chore(rules): tighten `jsx-max-props-per-line` to one prop per multiline
+
 ## 4.1.1
 
 ### Patch Changes
