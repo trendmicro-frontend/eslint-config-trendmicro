@@ -1,5 +1,11 @@
 # eslint-config-trendmicro
 
+## 4.4.0
+
+### Minor Changes
+
+- cee3bed: chore(rules): tune severities, add import rules, normalize style
+
 ## 4.3.0
 
 ### Minor Changes
