@@ -37,7 +37,7 @@ export default {
     'no-restricted-properties': 0,
     'no-restricted-syntax': 0,
     'no-return-await': 0,
-    'no-shadow': 1,
+    'no-shadow': 0,
     'no-underscore-dangle': 0,
     'no-unused-expressions': [2, {
       allowShortCircuit: true,
@@ -65,7 +65,7 @@ export default {
     'no-var': 2,
     'object-shorthand': 0,
     'one-var': 0,
-    'prefer-const': 1,
+    'prefer-const': [1, { destructuring: 'all' }],
     'prefer-destructuring': 0,
     'prefer-object-has-own': 0,
     'prefer-object-spread': 0,
