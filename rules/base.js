@@ -41,11 +41,15 @@ export default {
     'no-underscore-dangle': 0,
     'no-unused-expressions': [2, {
       'allowShortCircuit': true,
-      'allowTernary': true
+      'allowTernary': true,
+      'allowTaggedTemplates': true,
     }],
-    'no-unused-vars': [2, {
+    'no-unused-vars': [1, {
       'vars': 'local',
-      'args': 'none'
+      'args': 'none',
+      'varsIgnorePattern': '^_',
+      'argsIgnorePattern': '^_',
+      'caughtErrorsIgnorePattern': '^_',
     }],
     'no-use-before-define': 0,
     'no-useless-assignment': 0,
