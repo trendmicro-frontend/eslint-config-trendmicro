@@ -1,5 +1,11 @@
 # eslint-config-trendmicro
 
+## 4.4.1
+
+### Patch Changes
+
+- 74f3c29: chore(rules): disable `no-shadow`, tune `prefer-const`
+
 ## 4.4.0
 
 ### Minor Changes
