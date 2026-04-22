@@ -5,7 +5,7 @@ export default {
     'react/destructuring-assignment': 0,
     'react/forbid-prop-types': 0,
     'react/function-component-definition': 0,
-    'react/hook-use-state': 1,
+    'react/hook-use-state': [1, { allowDestructuredState: true }],
     'react/iframe-missing-sandbox': 1,
     'react/jsx-boolean-value': 0,
     'react/jsx-curly-spacing': 1,
