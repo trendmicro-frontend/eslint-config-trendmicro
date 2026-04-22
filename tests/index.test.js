@@ -94,14 +94,14 @@ describe('base rules', () => {
     expect(errorsFor(msgs, 'default-case')).toHaveLength(1);
   });
 
-  it('warns on var declarations', () => {
+  it('disallows var declarations', () => {
     const msgs = lint('var x = 1;\n');
-    expect(warningsFor(msgs, 'no-var')).toHaveLength(1);
+    expect(errorsFor(msgs, 'no-var')).toHaveLength(1);
   });
 
-  it('disallows prototype builtins', () => {
+  it('warns on prototype builtins', () => {
     const msgs = lint('obj.hasOwnProperty("key");\n');
-    expect(errorsFor(msgs, 'no-prototype-builtins')).toHaveLength(1);
+    expect(warningsFor(msgs, 'no-prototype-builtins')).toHaveLength(1);
   });
 });
 
@@ -112,11 +112,11 @@ describe('base rules', () => {
 describe('react rules', () => {
   it('flags unknown JSX props', () => {
     const msgs = lint('<div class="foo" />\n');
-    expect(warningsFor(msgs, 'react/no-unknown-property')).toHaveLength(1);
+    expect(errorsFor(msgs, 'react/no-unknown-property')).toHaveLength(1);
   });
 
   it('allows valid JSX', () => {
     const msgs = lint('<div className="foo" />\n');
-    expect(warningsFor(msgs, 'react/no-unknown-property')).toHaveLength(0);
+    expect(errorsFor(msgs, 'react/no-unknown-property')).toHaveLength(0);
   });
 });
