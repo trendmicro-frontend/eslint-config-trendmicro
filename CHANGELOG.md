@@ -1,5 +1,15 @@
 # eslint-config-trendmicro
 
+## 4.3.0
+
+### Minor Changes
+
+- d37ea9c: chore(rules): allow components as props for `react/no-unstable-nested-components`
+
+### Patch Changes
+
+- f68ee48: chore(rules): allow destructured state for `react/hook-use-state`
+
 ## 4.2.0
 
 ### Minor Changes
