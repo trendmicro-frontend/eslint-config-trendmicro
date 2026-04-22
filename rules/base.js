@@ -37,7 +37,7 @@ export default {
     'no-restricted-properties': 0,
     'no-restricted-syntax': 0,
     'no-return-await': 0,
-    'no-shadow': 0,
+    'no-shadow': 1,
     'no-underscore-dangle': 0,
     'no-unused-expressions': [2, {
       allowShortCircuit: true,
