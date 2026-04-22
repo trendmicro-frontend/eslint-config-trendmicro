@@ -39,7 +39,7 @@ export default {
     'react/no-typos': 1,
     'react/no-unknown-property': 1,
     'react/no-unsafe': 1,
-    'react/no-unstable-nested-components': 1,
+    'react/no-unstable-nested-components': [1, { allowAsProps: true }],
     'react/no-unused-prop-types': 0,
     'react/no-unused-state': 0,
     'react/prefer-stateless-function': 1,
