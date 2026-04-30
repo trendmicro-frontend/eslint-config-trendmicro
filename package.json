@@ -21,7 +21,7 @@
     "pretest": "npm run --silent lint",
     "test": "vitest run",
     "changeset": "changeset",
-    "ci-version": "changeset version",
+    "ci-version": "changeset version && yarn install --mode=update-lockfile",
     "ci-publish": "yarn build && changeset publish"
   },
   "repository": {
